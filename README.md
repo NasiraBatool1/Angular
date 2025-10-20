@@ -20,11 +20,17 @@ It includes key sections like:
 The UI focuses on a luxurious yet minimal look, optimized for both desktop and mobile.
 
 <h1>🛠️ Tech Stack</h1>
+
 Technology	Purpose
+
 Angular	Frontend framework
+
 Bootstrap 5	Styling and layout
+
 AOS (Animate On Scroll)	Smooth scroll animations
+
 HTML5 / CSS3	Structure & custom design
+
 TypeScript	Angular component logic
 
 
