@@ -37,9 +37,13 @@ TypeScript	Angular component logic
 <h1>🎨 Features</h1>
 
 ✅ Responsive layout using Bootstrap
+
 ✅ Smooth animations with AOS
+
 ✅ Modern UI for interview or portfolio presentation
+
 ✅ Clean, commented, and modular Angular structure
+
 ✅ Easy customization for any restaurant theme
 
 📸 Screenshots
