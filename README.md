@@ -1,4 +1,4 @@
-<h1>🍽️ Delisious.</h1> – Restaurant Website
+<h1>🍽️ Delisious.</h1> 
 
 A modern, responsive restaurant website built with Angular and Bootstrap, designed for table reservations and showcasing the restaurant’s chefs, menu, and services.
 
@@ -46,7 +46,7 @@ TypeScript	Angular component logic
 
 ✅ Easy customization for any restaurant theme
 
-📸 Screenshots
+
 
 <h1>Section	Preview</h1>
 
