@@ -50,7 +50,9 @@ TypeScript	Angular component logic
 
 <h1>Section	Preview</h1>
 
+
 <b>Landing Page</b>
+
 
 
 
@@ -59,7 +61,9 @@ TypeScript	Angular component logic
 
 
 
+
 <b>Home</b> 
+
 
 
 
@@ -67,11 +71,14 @@ TypeScript	Angular component logic
 
 
 
+
 <b>About Us	</b>
 
 
 
+
 <img width="1897" height="897" alt="image" src="https://github.com/user-attachments/assets/0840e610-94e2-4eeb-926a-e8a7d64bc028" />
+
 
 
 
@@ -83,11 +90,14 @@ TypeScript	Angular component logic
 
 
 
+
 <b>Book a Table</b>
 
 
 
+
 <img width="1877" height="871" alt="image" src="https://github.com/user-attachments/assets/a2891904-d052-4201-bddb-cd63498ba4b1" />
+
 
 
 <h1>✨ Author</h1>
