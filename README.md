@@ -63,7 +63,7 @@ http://localhost:4200/
 
 <h1>Section	Preview</h1>
 
-Landing Page
+<b>Landing Page</b>
 <img width="1881" height="872" alt="image" src="https://github.com/user-attachments/assets/059293d3-6731-4534-89dc-6dd76ff5049d" />
 
 Home 
