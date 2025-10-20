@@ -64,18 +64,23 @@ http://localhost:4200/
 <h1>Section	Preview</h1>
 
 <b>Landing Page</b>
+
 <img width="1881" height="872" alt="image" src="https://github.com/user-attachments/assets/059293d3-6731-4534-89dc-6dd76ff5049d" />
 
-Home 
+<b>Home</b> 
+
 <img width="1857" height="842" alt="image" src="https://github.com/user-attachments/assets/912c8ce3-855c-4051-839c-5af7e995a7f4" />
 
-About Us	
+<b>About Us	</b>
+
 <img width="1897" height="897" alt="image" src="https://github.com/user-attachments/assets/0840e610-94e2-4eeb-926a-e8a7d64bc028" />
 
-Chefs	
+<b>Chefs	</b>
+
 <img width="1863" height="877" alt="image" src="https://github.com/user-attachments/assets/3280baa0-ce37-4d13-af89-c666536a9374" />
 
-Book a Table	
+<b>Book a Table</b>
+
 <img width="1877" height="871" alt="image" src="https://github.com/user-attachments/assets/a2891904-d052-4201-bddb-cd63498ba4b1" />
 
 
