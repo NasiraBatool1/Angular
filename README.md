@@ -27,29 +27,6 @@ AOS (Animate On Scroll)	Smooth scroll animations
 HTML5 / CSS3	Structure & custom design
 TypeScript	Angular component logic
 
-<h1>📦 Setup Instructions</h1>
-
-Follow these steps to run the project locally:
-
-1️⃣ Clone the Repository
-git clone https://github.com/NasiraBatool1/Angular-Project.git
-cd Angular-Project
-
-2️⃣ Install Dependencies
-
-Make sure you have Node.js and Angular CLI installed.
-Then run:
-
-npm install
-
-3️⃣ Run the Development Server
-ng serve
-
-
-Visit your app at:
-
-http://localhost:4200/
-
 
 <h1>🎨 Features</h1>
 
