@@ -1,4 +1,4 @@
-🍽️ Delisious – Restaurant Website
+<h1>🍽️ Delisious.</h1> – Restaurant Website
 
 A modern, responsive restaurant website built with Angular and Bootstrap, designed for table reservations and showcasing the restaurant’s chefs, menu, and services.
 
