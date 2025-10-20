@@ -1,0 +1,131 @@
+<h1 class="text-center mt-5">Add Product</h1>
+
+<div class="container justify-content-center mt-5">
+  <form class="row g-3" (ngSubmit)="AddProducts()">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Name</label>
+      <input type="text" name="product.name" [(ngModel)]="products.name" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Category</label>
+      <select class="form-control" name="product.category" [(ngModel)]="products.category">
+        <option>Staters</option>
+        <option>Breakfast</option>
+        <option>Lunch</option>
+        <option>Dinner</option>
+      </select>
+    </div>
+
+
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Price</label>
+      <input type="number" name="product.price" [(ngModel)]="products.price" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Quantity</label>
+      <input type="number" name="product.quantity" [(ngModel)]="products.quantity" class="form-control" id="inputCity">
+
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" name="product.qr" [(ngModel)]="products.qr" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12 d-flex justify-content-end">
+      <button type="submit" class=" btn btn-primary">Add Product</button>
+    </div>
+  </form>
+
+  <div>
+    <h1>Product Details</h1>
+    <table datatable  class="table table-striped row-border hover">
+
+      <thead>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Category</td>
+        <td>Quantity</td>
+        <td>QR</td>
+        <td>Action</td>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of Products">
+          <td>{{p.id}}</td>
+          <td>{{p.name}}</td>
+          <td>{{p.price}}</td>
+          <td>{{p.category}}</td>
+          <td>{{p.quantity}}</td>
+          <td>{{p.qr}}</td>
+          <td>
+            <button type="button" (click)="SelectedProducts(p)"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editProductModal">
+              Edit
+            </button>
+            <button class="ms-2 btn btn-danger" (click)="DeleteProducts(p.id)">Delete</button>
+
+          </td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form class="row g-3" (ngSubmit)="UpdateProducts()">
+
+      <div class="modal-body">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Update Product</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Name</label>
+            <input type="text" name="product.name"  [(ngModel)]="selectedProducts.name" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Category</label>
+            <select class="form-control" name="product.category" [(ngModel)]="selectedProducts.category">
+              <option>Staters</option>
+              <option>Breakfast</option>
+              <option>Lunch</option>
+              <option>Dinner</option>
+            </select>
+          </div>
+
+
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Price</label>
+            <input type="number" name="product.price" [(ngModel)]="selectedProducts.price" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Quantity</label>
+            <input type="number" name="product.quantity" [(ngModel)]="selectedProducts.quantity" class="form-control" id="inputCity">
+
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" name="product.qr" [(ngModel)]="selectedProducts.qr" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12 d-flex justify-content-end">
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+
+

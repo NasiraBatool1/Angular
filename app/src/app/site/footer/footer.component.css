@@ -1,0 +1,32 @@
+.footer {
+  background: linear-gradient(145deg, #111, #000);
+  color: #aaa;
+  padding: 25px 0;
+  border-top: 1px solid #D4AF37;
+  box-shadow: 0 -5px 15px rgba(212, 175, 55, 0.2);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer .brand {
+  color: #D4AF37;
+  font-weight: 600;
+}
+
+.footer .social-icons {
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  color: #D4AF37;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .social-icons a:hover {
+  color: #fff;
+}

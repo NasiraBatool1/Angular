@@ -1,0 +1,77 @@
+body {
+  background: #000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.luxury-box {
+  background: linear-gradient(145deg, #111, #000);
+  border: 1px solid #D4AF37;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+}
+
+.luxury-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #D4AF37;
+  letter-spacing: 1px;
+}
+
+.luxury-subtitle {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.luxury-label {
+  color: #D4AF37;
+  font-weight: 500;
+}
+
+.luxury-input {
+  background: #111;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.luxury-input:focus {
+  background: #000;
+  border-color: #D4AF37;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+  color: #fff;
+}
+
+.luxury-btn {
+  background: #D4AF37;
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.luxury-btn:hover {
+  background: #b8962e;
+  color: #fff;
+}
+
+/* Tabs */
+.luxury-tabs .nav-link {
+  color: #aaa;
+  font-weight: 600;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.luxury-tabs .nav-link.active {
+  color: #D4AF37 !important;
+  border-bottom: 2px solid #D4AF37;
+}
+
+.luxury-tabs .nav-link:hover {
+  color: #fff;
+}

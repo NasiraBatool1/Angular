@@ -1,0 +1,19 @@
+[{
+  "name" : "Product1",
+  "price" : 10,
+  "quantity" : 10,
+  "category" : "laptop"
+},
+{
+  "name" : "Product1",
+  "price" : 10,
+  "quantity" : 10,
+  "category" : "laptop"
+},
+{
+  "name" : "Product1",
+  "price" : 10,
+  "quantity" : 10,
+  "category" : "laptop"
+}
+]

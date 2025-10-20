@@ -1,0 +1,69 @@
+<!-- ======= Book A Table Section ======= -->
+<section id="book-a-table" class="book-a-table py-5 bg-light">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header text-center mb-5">
+      <h2 class="fw-bold text-dark">Book A Table</h2>
+      <p class="text-muted fs-5">Reserve <span class="text-danger fw-semibold">Your Spot</span> With Us</p>
+    </div>
+
+    <div class="row align-items-center">
+      <!-- Left: Image -->
+      <div class="col-md-6 mb-4 mb-md-0 text-center" data-aos="fade-right" data-aos-delay="100">
+        <img src="assets/table.jpg" class="img-fluid rounded-4 shadow" alt="Book Table">
+      </div>
+
+      <!-- Right: Form -->
+      <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+        <div class="card shadow-lg border-0 rounded-4">
+          <div class="card-body p-4">
+            <h3 class="text-center mb-3 text-danger">Reserve Your Table</h3>
+            <p class="text-center text-muted">Please fill out the form below to make your reservation.</p>
+
+            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" id="name"
+                    placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" id="email"
+                    placeholder="Your Email" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="phone" id="phone"
+                    placeholder="Your Phone" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" name="date" class="form-control" id="date"
+                    placeholder="Date" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="time" id="time"
+                    placeholder="Time" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="number" class="form-control" name="people" id="people"
+                    placeholder="# of People" required>
+                </div>
+              </div>
+
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="4"
+                  placeholder="Special Requests (optional)"></textarea>
+              </div>
+
+              <div class="text-center mt-4">
+                <button type="submit" class="btn btn-danger px-5 py-2 rounded-pill shadow">
+                  Book a Table
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Book A Table Section -->
