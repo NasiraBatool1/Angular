@@ -15,7 +15,7 @@ export class ProductComponent {
     name: '',
     category: '',
     price: 0,
-    qr: '',
+    cost: 0,
     quantity: 0
   };
   Products: Products[] = []
@@ -34,10 +34,16 @@ async UpdateProducts(){
 }
 
 async AddProducts() {
-  const productsDocument = doc(this.collectionRef)
-  await setDoc(productsDocument, this.products)
-  alert("Product Added")
-  this.ReadProducts()
+  const productsDocument = doc(this.collectionRef);
+  // Add createdAt and cost fields
+  const productToAdd = {
+    ...this.products,
+    createdAt: new Date(), // or Timestamp.now() if using Firestore Timestamp
+    cost: this.products.cost ?? 0 // You can bind cost to the form if you want
+  };
+  await setDoc(productsDocument, productToAdd);
+  alert("Product Added");
+  this.ReadProducts();
 }
 async ReadProducts(){
   this.Products = (await getDocs(this.collectionRef)).docs.map(item=>{

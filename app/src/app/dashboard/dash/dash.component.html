@@ -111,13 +111,71 @@
     </div>
     <div id="layoutSidenav_content">
       <main>
-        <div class="container-fluid px-4">
-          <router-outlet></router-outlet>
+        <div class="container py-5">
+          <ng-container *ngIf="isDashboardRoute(); else childContent">
+            <h2 class="mb-4 text-center">Dashboard Overview</h2>
+            <div class="row mb-4">
+              <div class="col-md-3">
+                <div class="card text-white bg-primary mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Total Products</h5>
+                    <p class="card-text display-6">{{ products.length }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-white bg-success mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Total Quantity</h5>
+                    <p class="card-text display-6">{{ totalQuantity }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-white bg-warning mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Categories</h5>
+                    <p class="card-text display-6">{{ uniqueCategories }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-white bg-info mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Today Orders</h5>
+                    <p class="card-text display-6">{{ todayOrders }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col-md-6">
+                <div class="card text-white bg-secondary mb-3">
+                  <div class="card-body">
+                    <h5 class="card-title">Total Profit/Loss</h5>
+                    <p class="card-text display-6">{{ totalProfit | currency }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-3">
+                  <div class="card-header bg-white">
+                    <h5 class="mb-0">Profit/Loss Over Time</h5>
+                  </div>
+                  <div class="card-body">
+                    <canvas id="profitLossChart" height="100"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+          <ng-template #childContent>
+            <router-outlet></router-outlet>
+          </ng-template>
         </div>
       </main>
     </div>
-
-  </div>
+    </div>
 
 
 </div>

@@ -27,8 +27,8 @@
 
     </div>
     <div class="col-md-2">
-      <label for="inputZip" class="form-label">Zip</label>
-      <input type="text" name="product.qr" [(ngModel)]="products.qr" class="form-control" id="inputZip">
+      <label for="inputCost" class="form-label">Cost</label>
+      <input type="number" name="cost" [(ngModel)]="products.cost" class="form-control" id="inputCost">
     </div>
     <div class="col-12 d-flex justify-content-end">
       <button type="submit" class=" btn btn-primary">Add Product</button>
@@ -45,7 +45,7 @@
         <td>Price</td>
         <td>Category</td>
         <td>Quantity</td>
-        <td>QR</td>
+        <td>Cost</td>
         <td>Action</td>
       </thead>
       <tbody>
@@ -55,7 +55,7 @@
           <td>{{p.price}}</td>
           <td>{{p.category}}</td>
           <td>{{p.quantity}}</td>
-          <td>{{p.qr}}</td>
+          <td>{{p.cost}}</td>
           <td>
             <button type="button" (click)="SelectedProducts(p)"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editProductModal">
               Edit
@@ -110,12 +110,11 @@
 
           </div>
           <div class="col-md-2">
-            <label for="inputZip" class="form-label">Zip</label>
-            <input type="text" name="product.qr" [(ngModel)]="selectedProducts.qr" class="form-control" id="inputZip">
+            <label for="inputCost" class="form-label">Cost</label>
+            <input type="number" name="cost" [(ngModel)]="selectedProducts.cost" class="form-control" id="inputCost">
           </div>
           <div class="col-12 d-flex justify-content-end">
           </div>
-
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

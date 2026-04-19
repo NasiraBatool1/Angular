@@ -16,14 +16,23 @@ import { DataTablesModule } from 'angular-datatables';
 import {Auth, provideAuth} from '@angular/fire/auth';
 import {getAuth} from '@firebase/auth';
 
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDh6-Bb8EYJ3USn_-IVKVg1NsqgLY8MG0U",
-  authDomain: "delisious-73567.firebaseapp.com",
-  projectId: "delisious-73567",
-  storageBucket: "delisious-73567.appspot.com",
-  messagingSenderId: "251803976774",
-  appId: "1:251803976774:web:ddad766094a86078deb647"
+  // apiKey: "AIzaSyDh6-Bb8EYJ3USn_-IVKVg1NsqgLY8MG0U",
+  // authDomain: "delisious-73567.firebaseapp.com",
+  // projectId: "delisious-73567",
+  // storageBucket: "delisious-73567.appspot.com",
+  // messagingSenderId: "251803976774",
+  // appId: "1:251803976774:web:ddad766094a86078deb647"
+  apiKey: "AIzaSyBnJyRlZCuJzMKh1eT9AddLRzKG3X_HivA",
+  authDomain: "delicious-1366c.firebaseapp.com",
+  projectId: "delicious-1366c",
+  storageBucket: "delicious-1366c.firebasestorage.app",
+  messagingSenderId: "805912049119",
+  appId: "1:805912049119:web:153e1f82afd9834ee8c06a",
+  measurementId: "G-N45GKWXR2P"
 };
+
 @NgModule({
 
   declarations: [

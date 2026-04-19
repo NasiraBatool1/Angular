@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',
-  styleUrl: './auth.component.css'
+  styleUrls: ['./auth.component.css']
 })
 export class AuthComponent {
   username: string = ""
@@ -13,21 +14,25 @@ export class AuthComponent {
     password: "",
     isError: false
   }
-  constructor() {
 
-  }
+  constructor(private router: Router) {}
+
   ValidateInput(event: any, type: string) {
     this.error[type] = event.target.value.length === 0 ? `${type} is required` : ''
     this.error.isError = event.target.value.length === 0
   }
-  AddData() {
-    console.log(this.error)
-    if (!this.error.isError) {
-      console.log("Add Data called")
-      console.log(this.username, this.password)
-    } else {
-      alert("Invalid input data")
-    }
 
+  AddData() {
+    if (!this.error.isError) {
+      // Hardcoded admin credentials
+      if (this.username === 'admin' && this.password === 'admin123') {
+        // Navigate to dashboard root
+        this.router.navigate(['/dashboard']);
+      } else {
+        alert('Invalid username or password');
+      }
+    } else {
+      alert("Invalid input data");
+    }
   }
 }
